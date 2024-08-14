@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+  }
+  body {
+    background-color: #f8f9fd;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container {
+    height: 75vh;
+    width: 400px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .icon {
+    width: 80px;
+    height: 80px;
+    background: #8d448b;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    top: 30px;
+  }
+  i {
+    position: absolute;
+    top: 25px;
+    left: 26px;
+    color: #fff;
+  }
+  h3 {
+    margin-top: 50px;
+    text-align: center;
+    color: #8d448b;
+    margin-bottom: 30px;
+  }
+  .form {
+    background: rgba(0, 0, 0, 0.05);
+    color: #000;
+    font-size: 16px;
+    border: 1px solid transparent;
+    padding: 15px;
+    width: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .checkbox {
+    display: flex;
+    justify-content: space-between;
+    color: #8d448b;
+    a {
+      color: #8d448b;
+      text-decoration: none;
+    }
+  }
+  input[type="checkbox"] {
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+  }
+  label {
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  input[type="checkbox"]:after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-size: 11px;
+    color: #fff;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  input[type="checkbox"]:checked {
+    background-color: #8d448b;
+  }
+  input[type="checkbox"]:checked:after {
+    display: block;
+  }
+  #submit {
+    background-color: #8d448b;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 55px;
+  }
+  @media (max-width: 430px){
+    .container{
+    width: 300px;
+    }
+    .form{
+         width: 250px;
+    }
+    .checkbox{
+        display: flex;
+        justify-content: space-around;
+    }
+    input[type="checkbox"]{
+        height: 13px;
+        width: 13px;
+    }
+    input[type="checkbox"]:after{
+        font-size: 9px;
+    }
+    label{
+        margin-right: 0;
+    }
+    #submit{
+        width: 150px;
+    }
+  }
